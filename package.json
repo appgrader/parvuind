@@ -1,0 +1,35 @@
+{
+  "name": "parvuind",
+  "version": "0.0.1",
+  "description": "Sample boilerplate ParcelJS, TailwindCSS, and VueJS aimed for speedy webpage development.",
+  "scripts": {
+    "dev": "parcel src/index.html --open",
+    "watch": "parcel watch src/index.html",
+    "build:app": "parcel build src/index.html --no-source-maps",
+    "build:css": "postcss src/main.css -o dist/app.css",
+    "prebuild": "shx rm -rf dist/*",
+    "prod": "npm run prebuild && npm run build:app"
+  },
+  "keywords": ["boilerplate", "parceljs", "vuejs", "tailwindcss"],
+  "author": {
+    "name": "Vitor Caneco",
+    "email": "vitor.caneco@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "main.css": "^1.0.0",
+    "vue": "^2.6.10",
+    "vue-hot-reload-api": "^2.3.3"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^1.1.0",
+    "@vue/component-compiler-utils": "^2.6.0",
+    "cssnano": "^4.1.10",
+    "parcel-bundler": "^1.12.3",
+    "postcss-cli": "^6.1.2",
+    "postcss-nested": "^4.1.2",
+    "shx": "^0.3.2",
+    "tailwindcss": "^0.7.4",
+    "vue-template-compiler": "^2.6.10"
+  }
+}

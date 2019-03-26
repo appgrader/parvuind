@@ -1,0 +1,10 @@
+/.cache
+/.idea
+/.vagrant
+/.vscode
+/node_modules
+/vendor
+.env
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
